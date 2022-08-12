@@ -14,7 +14,20 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@poc-stencil-component-library/core-components": [
+        "dist/packages/core-components"
+      ],
+      "@poc-stencil-component-library/core-components-react": [
+        "packages/core-components-react/src/index.ts"
+      ],
+      "@poc-stencil-component-library/core-components/*": [
+        "dist/packages/core-components/dist/components/*"
+      ],
+      "@poc-stencil-component-library/core-components/loader": [
+        "dist/packages/core-components/loader"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
